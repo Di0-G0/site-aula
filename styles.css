@@ -1,0 +1,76 @@
+/* Reset de estilos para remover margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, section, footer {
+    padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+}
+
+/* Estilos das seções */
+.about, .services, .benefits, .contact {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Estilos do formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos do rodapé */
+footer {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+/* Layout responsivo usando Flexbox */
+@media screen and (max-width: 768px) {
+    header, .about, .services, .benefits, .contact {
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
